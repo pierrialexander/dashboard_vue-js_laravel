@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Navbar</p>
+    <h3 class="logo"><i class="fa fa-user"></i> Logo</h3>
   </div>
 </template>
 
@@ -11,5 +11,9 @@ export default {
 </script>
 
 <style lang="scss">
-  
+  .logo {
+    padding-top:5px;
+    padding-left: 10px;
+    color: white;
+  }
 </style>

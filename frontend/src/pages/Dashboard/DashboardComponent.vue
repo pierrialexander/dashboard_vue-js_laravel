@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import SideBarComponent from "../components/SideBarComponent.vue"
-import NavBarComponent from "../components/NavBarComponent.vue"
+import SideBarComponent from "./components/SideBarComponent.vue"
+import NavBarComponent from "./components/NavBarComponent.vue"
 
 export default {
   name: 'DashBoardComponent',
