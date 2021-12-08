@@ -2,7 +2,7 @@
   <div>
     <DashBoardComponent>
       <div slot="slot-pages" class="content-pages">
-        <p>Home</p>
+        <p>Products</p>
       </div>
     </DashBoardComponent>
   </div>
@@ -13,6 +13,7 @@
 import DashBoardComponent from '../Dashboard/DashboardComponent.vue'
 
 export default {
+  name: 'ProductsComponent',
   components:{
     DashBoardComponent,
   }
