@@ -13,11 +13,12 @@
   .content-right {
     width: calc(100% - 250px);
     height: 100vh;
-    background-color: #777;
+    background-color: $fundoDashboard;
+    
     
     .navBar {
       width: 100%;
-      padding: 20px 15px;
+      padding: 10px 15px;
       background-color: $fundoLogin;
     }
 
