@@ -1,13 +1,13 @@
 <template>
   <div class="my_cards">
     <div class="content top">
-      <h3>Clientes</h3>
-      <p class="porcentagem"> <i class="fa fa-arrow-up" id="arrow"></i> 7%</p>
+      <h3>{{ type }}</h3>
+      <p class="porcentagem"> <i class="fa fa-arrow-up" id="arrow"></i>{{ porcentagem }}</p>
     </div>   
 
     <div class="content footer">
-      <i class="fa fa-users" id="icon-footer"></i>
-      <p class="qtd">9570</p>
+      <i :class="['fa', icon]" id="icon-footer"></i>
+      <p class="qtd">{{ qtd }}</p>
     </div>
   </div>
 </template>
@@ -15,7 +15,13 @@
 <script>
 
 export default {
-  
+  name: 'CardsComponent',
+  props: {
+    type: String,
+    porcentagem: String,
+    icon: String,
+    qtd: String,
+  }
   }
 
 </script>
@@ -27,7 +33,7 @@ export default {
     display: flex;
     flex-direction: column;
     background-color: $hoverLinks;
-    min-width: 20%;
+    width: 100%;
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
