@@ -2,7 +2,11 @@
   <div>
     <DashBoardComponent>
       <div slot="slot-pages" class="content-pages">
-        <p>Products</p>
+         
+        <header class="title-pages">
+          <p>Products</p>
+        </header>
+       
       </div>
     </DashBoardComponent>
   </div>
@@ -22,6 +26,4 @@ export default {
 </script>
 
 
-<style scoped>
-
-</style>
+<style lang="scss" src="./style.scss" scoped />
