@@ -52,10 +52,10 @@ export default {
       }
     }
 
-    .top {
+    /* .top {
 
     }
-
+ */
     .footer {
       
       #icon-footer {
