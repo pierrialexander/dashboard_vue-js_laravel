@@ -13,6 +13,7 @@
     <div class="menu">
       <ul>
         <router-link :to="{name: 'Home'}"><li><i class="fa fa-home"></i> Home</li></router-link>
+        <router-link :to="{name: 'clients'}"><li><i class="fa fa-home"></i> Clientes</li></router-link>
         <router-link :to="{name: 'Products'}"><li><i class="fas fa-dolly-flatbed"></i> Produtos</li></router-link>
         <router-link :to="{name: 'Home'}"><li><i class="fas fa-chart-line"></i> Vendas</li></router-link>
         <router-link :to="{name: 'Home'}"><li><i class="fas fa-print"></i> Relatórios</li></router-link>

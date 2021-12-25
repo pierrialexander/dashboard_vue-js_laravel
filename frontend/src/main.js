@@ -7,6 +7,7 @@ import '@fortawesome/fontawesome-free/js/all.js'
 import LoginComponent from './pages/Login/LoginComponent'
 import HomeComponent from './pages/Home/HomeComponent'
 import ProductsComponent from './pages/Products/ProductsComponent'
+import ClientsComponent from './pages/Clients/ClientsComponent'
 
 
 Vue.config.productionTip = false
@@ -15,6 +16,7 @@ Vue.use(VueRouter)
 const routes = [
   { path: '/', name: 'Login', component: LoginComponent },
   { path: '/home', name: 'Home', component: HomeComponent },
+  { path: '/clients', name: 'clients', component: ClientsComponent },
   { path: '/produtos', name: 'Products', component: ProductsComponent }
 ]
 
