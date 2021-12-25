@@ -4,21 +4,19 @@
       <p><strong>Clientes</strong></p>
     </div>
     <div class="content">
-        <table class="table table-striped">
+        <table class="table table-striped my_table">
         <thead>
           <tr>
             <th scope="col">#</th>
             <th scope="col">Nome</th>
             <th scope="col">Email</th>
-            <th scope="col">contato</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="user in users" :key="user.id">
-            <th scope="row">{{ user.id }}</th>
-            <td class="users">{{ user.name }}</td>
-            <td class="users">{{ user.email }}</td>
-            <td class="users">{{ user.phone }}</td>
+            <th scope="row"><p class="users">{{ user.id }}</p></th>
+            <td><p class="users">{{ user.name }}</p></td>
+            <td><p class="users">{{ user.email }}</p></td>
           </tr>
         </tbody>
       </table>

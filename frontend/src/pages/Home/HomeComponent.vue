@@ -28,7 +28,7 @@
         
         <div class="mt-5">
           <div class="row">
-            <div class="col-12 col-lg-12">
+            <div class="col-12 col-lg-6">
               <ListsComponent :users="users"/>
             </div>
           </div>
