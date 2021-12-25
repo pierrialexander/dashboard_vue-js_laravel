@@ -29,7 +29,10 @@
         <div class="mt-5">
           <div class="row">
             <div class="col-12 col-lg-6">
-              <ListsComponent :users="users"/>
+              <ListsComponent :data="users" description="Clientes" :columns="['Nome', 'E-mail']"/>
+            </div>
+            <div class="col-12 col-lg-6">
+              <ListsComponent :data="users" description="Produtos" :columns="['Nome', 'Valor']"/>
             </div>
           </div>
         </div>
@@ -41,6 +44,7 @@
 
 
 <script>
+/* eslint-disabled */
 import DashBoardComponent from '../Dashboard/DashboardComponent.vue'
 import CardsComponent from '../../components/CardsComponent.vue'
 import ListsComponent from '../../components/ListsComponent.vue'
