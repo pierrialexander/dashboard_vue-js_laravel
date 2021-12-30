@@ -29,10 +29,10 @@
         <div class="mt-5">
           <div class="row">
             <div class="col-12 col-lg-6">
-              <ListsComponent :data="users" description="Clientes" :columns="['Nome', 'E-mail']"/>
+              <ListsComponent :data="clients" description="Clientes" :columns="['Nome', 'E-mail']"/>
             </div>
             <div class="col-12 col-lg-6">
-              <ListsComponent :data="users" description="Produtos" :columns="['Nome', 'Valor']"/>
+              <ListsComponent :data="products" description="Produtos" :columns="['Nome', 'Valor']"/>
             </div>
           </div>
         </div>
@@ -54,7 +54,8 @@ export default {
   name: 'HomeComponent',
   data() {
     return {
-      users: []
+      clients: [],
+      products: []
     }
   },
   mounted(){
@@ -63,12 +64,16 @@ export default {
   methods: {
     async getUsers() {
 
-      const response = await axios.get('https://jsonplaceholder.typicode.com/users')
+      let response = await axios.get('/')
+
       if (response.status == 200) {
-        this.users = response.data
+        this.clients = response.data.clients
+        this.products = response.data.products
+        
       } else {
-        console.error('Deu Pau')
+        console.error('Ocorreu um erro de retorno da API.')
       }
+
       
     }
   },
